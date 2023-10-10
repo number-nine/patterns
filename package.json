@@ -1,0 +1,22 @@
+{
+    "name": "patterns",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "node -r tsconfig-paths/register ./dist/main.js",
+        "dev": "nodemon",
+        "build": "tsc -p tsconfig.json"
+    },
+    "dependencies": {
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.0",
+        "reflect-metadata": "^0.1.13"
+    },
+    "devDependencies": {
+        "@types/node": "^20.2.5",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.1.3"
+    }
+}
