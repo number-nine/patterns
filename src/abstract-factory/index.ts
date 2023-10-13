@@ -20,7 +20,7 @@ interface IPetAnimal {
   color: string;
 }
 
-export function petFactory(type: Pet, name: string) {
+export function petFactory(type: Pet, name: string):PetAnimal|undefined {
     if (wollyPets.includes(type as WoollyPet)) {
     return new WollyPetFactory().create(type, name)
     }
