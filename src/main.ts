@@ -31,3 +31,11 @@
 //   console.log(pet3);
 //   console.log(pet3.says());
 // }
+
+
+/** Abstract factory**/
+
+// import { petFactory } from "./abstract-factory";
+
+// const pet = petFactory('bat', 'Murzik')
+// pet?.says()
