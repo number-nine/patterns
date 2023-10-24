@@ -39,3 +39,20 @@
 
 // const pet = petFactory('bat', 'Murzik')
 // pet?.says()
+
+
+/** Prototype **/
+
+// import { Box, IBox } from "./prototype";
+// const prototypeBox: IBox = new Box("plastic", 10);
+
+// const box1 = prototypeBox.produce();
+// const box2 = prototypeBox.produce();
+
+// console.log(box1);
+// console.log(box2);
+
+// box1.maxWeight = 20;
+
+// console.log(box1);
+// console.log(box2);
