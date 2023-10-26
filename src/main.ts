@@ -62,3 +62,16 @@
 // import Box from './builder'
 // const myBox = new Box()  // RangeError: Maximum call stack size exceeded ??????????
 
+/** Decorator **/
+
+// import { Nissan, MoonRoof } from './decorator';
+
+// const nissan = new Nissan();
+// const myNissan = new MoonRoof(nissan);
+
+// console.log(myNissan.getModel());
+
+
+import { f } from './decorator'
+
+f(4);
