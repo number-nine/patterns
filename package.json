@@ -2,6 +2,7 @@
     "name": "patterns",
     "version": "1.0.0",
     "main": "main.js",
+    
     "scripts": {
         "start": "node -r tsconfig-paths/register ./dist/main.js",
         "dev": "nodemon",
