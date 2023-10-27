@@ -72,6 +72,6 @@
 // console.log(myNissan.getModel());
 
 
-import { f } from './decorator'
+// import { f } from './decorator'
 
-f(4);
+// f(4);

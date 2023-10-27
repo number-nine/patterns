@@ -41,18 +41,29 @@
 // }
 
 
-type Fnc = (x: number) => number
+// type Fnc = (x: number) => number
     
-let f:Fnc = (n: number): number => (n !== 1) ? (f(n - 1) * n) : n; 
+// let f:Fnc = (n: number): number => (n !== 1) ? (f(n - 1) * n) : n; 
 
-const logDecorator = (x:Fnc) => {
-    return function () {
-        const result = x.apply(this, arguments);
-        console.log(result);
-        return result;
-    }
-}
+// const logDecorator = (x:Fnc) => {
+//     return function () {
+//         const result = x.apply(this, arguments);
+//         console.log('result:', result);
+//         return result;
+//     }
+// }
 
-f = logDecorator(f)
+// const countDecorator = (x: Fnc) => {
+//     let cnt: number = 1;
+//     return function () {
+        
+//         console.log('call:', cnt);
+//         cnt++;
+//         return x.apply(this, arguments);
+//     }
+// }
+// f = countDecorator(f);
+// f = logDecorator(f)
 
-export {f};
+
+// export {f};
