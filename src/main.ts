@@ -32,14 +32,12 @@
 //   console.log(pet3.says());
 // }
 
-
 /** Abstract factory**/
 
 // import { petFactory } from "./abstract-factory";
 
 // const pet = petFactory('bat', 'Murzik')
 // pet?.says()
-
 
 /** Prototype **/
 
@@ -71,17 +69,26 @@
 
 // console.log(myNissan.getModel());
 
-
 // import { f } from './decorator'
 
 // f(4);
 
 /** Facade **/
 
-import { Building, BuildingFacade } from "./facade";
+// import { Building, BuildingFacade } from "./facade";
 
-const building = new BuildingFacade(new Building());
+// const building = new BuildingFacade(new Building());
 
-const house = building.createBuilding();
+// const house = building.createBuilding();
 
-console.log(house);
+// console.log(house);
+
+/** Proxy **/
+
+import { Door, SecureDoor } from "./proxy";
+
+const door = new SecureDoor(new Door());
+
+door.open("3456");
+door.open("1234");
+door.close();
