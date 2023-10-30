@@ -75,3 +75,13 @@
 // import { f } from './decorator'
 
 // f(4);
+
+/** Facade **/
+
+import { Building, BuildingFacade } from "./facade";
+
+const building = new BuildingFacade(new Building());
+
+const house = building.createBuilding();
+
+console.log(house);
