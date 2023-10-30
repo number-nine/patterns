@@ -85,10 +85,21 @@
 
 /** Proxy **/
 
-import { Door, SecureDoor } from "./proxy";
+// import { Door, SecureDoor } from "./proxy";
 
-const door = new SecureDoor(new Door());
+// const door = new SecureDoor(new Door());
 
-door.open("3456");
-door.open("1234");
-door.close();
+// door.open("3456");
+// door.open("1234");
+// door.close();
+
+/** Adapter **/
+import { Cat, Dog, DogAdapter, Pet } from "./adapter";
+
+const myPet1 = new Pet();
+const oldFeeding = new Cat()
+myPet1.feedPet(oldFeeding)
+
+const myPet2 = new Pet();
+const feedingAdapter = new DogAdapter(new Dog())
+myPet2.feedPet(feedingAdapter)
