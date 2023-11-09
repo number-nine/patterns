@@ -94,12 +94,14 @@
 // door.close();
 
 /** Adapter **/
-import { Cat, Dog, DogAdapter, Pet } from "./adapter";
+// import { Cat, Dog, DogAdapter, Pet } from "./adapter";
 
-const myPet1 = new Pet();
-const oldFeeding = new Cat()
-myPet1.feedPet(oldFeeding)
+// const myPet1 = new Pet();
+// const oldFeeding = new Cat()
+// myPet1.feedPet(oldFeeding)
 
-const myPet2 = new Pet();
-const feedingAdapter = new DogAdapter(new Dog())
-myPet2.feedPet(feedingAdapter)
+// const myPet2 = new Pet();
+// const feedingAdapter = new DogAdapter(new Dog())
+// myPet2.feedPet(feedingAdapter)
+
+/** Composite **/
